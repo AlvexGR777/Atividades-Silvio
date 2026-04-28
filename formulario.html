@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+ </head>
+
+
+ <body>
+<div class="container">
+<h2>Cadastro</h2>
+<form method="get" action="cadastrobanco.php"></form>
+   
+   <!--Textbox -->
+   <label for="nome">Nome:</label>
+   <input type="text" id="nome" name="nome" required>
+
+<!-- Email -->
+ <label for="email">Email:</label>
+ <imput type="email" id="email" name="email" required>
+
+<!--Password-->
+<label  for="senha">Senha:</label> 
+ <imput type="password" id="senha" name="senha" required>
+
+<!--Select-->
+<label for="carro">Escolha um carro</label>
+<select id="carro" name="carro">
+<option value="fiat">Fiat</option>
+<option value="ford">Ford</option>
+<option value="chevrolet">Chevrolet</option>
+<option value="toyota">Toyota</option>
+</select>
+
+<!-- Radio Buttons-->
+ <label>Sexo</label>
+ <div class="radio-group">
+<imput type="radio" id="masculino" name="sexo" value="masculino">
+<label for="masculino"> Masculino</label>
+
+<imput type="radio" id="feminino" name="feminino" value="feminino">
+  <label for="feminino">Feminino</label>
+
+</div>
+
+<!--TextArea-->
+<label for="mensagem">Mensagem</label>
+<textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+<button type="submit">enviar</button>
+</form>
+</div>
+ </body>
+
+</html>
