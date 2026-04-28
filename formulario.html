@@ -1,56 +1,52 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulários</title>
- </head>
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro</h2>
+        <form method="get" action="cadastrobanco.php">
+            <!--TextBox-->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
 
+            <!--Email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
- <body>
-<div class="container">
-<h2>Cadastro</h2>
-<form method="get" action="cadastrobanco.php"></form>
-   
-   <!--Textbox -->
-   <label for="nome">Nome:</label>
-   <input type="text" id="nome" name="nome" required>
+            <!--Password-->
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required>
 
-<!-- Email -->
- <label for="email">Email:</label>
- <imput type="email" id="email" name="email" required>
+            <!--Select-->
+            <label for="carro">Escolha um carro:</label>
+            <select id="carro" name="carro">
+                <option value="fiat">Fiat</option>
+                <option value="ford">Ford</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Toyota">Toyota</option>
+            </select>
 
-<!--Password-->
-<label  for="senha">Senha:</label> 
- <imput type="password" id="senha" name="senha" required>
+            <!--Ratio Button-->
+            <label>Sexo:</label>
+            <div class="ratio-group">
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+                <label for="masculino">Masculino</label>
 
-<!--Select-->
-<label for="carro">Escolha um carro</label>
-<select id="carro" name="carro">
-<option value="fiat">Fiat</option>
-<option value="ford">Ford</option>
-<option value="chevrolet">Chevrolet</option>
-<option value="toyota">Toyota</option>
-</select>
+                <input type="radio" id="feminino" name="sexo" value="feminino">
+                <label for="feminino">Feminino</label>
+            </div>
 
-<!-- Radio Buttons-->
- <label>Sexo</label>
- <div class="radio-group">
-<imput type="radio" id="masculino" name="sexo" value="masculino">
-<label for="masculino"> Masculino</label>
+            <!--Textarea-->
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
 
-<imput type="radio" id="feminino" name="feminino" value="feminino">
-  <label for="feminino">Feminino</label>
-
-</div>
-
-<!--TextArea-->
-<label for="mensagem">Mensagem</label>
-<textarea id="mensagem" name="mensagem" rows="4"></textarea>
-
-<button type="submit">enviar</button>
-</form>
-</div>
- </body>
-
+            <button type="submit">Enviar</button>
+        </form> 
+    </div>
+</body>
 </html>
