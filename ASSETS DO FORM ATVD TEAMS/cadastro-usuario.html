@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h2>Cadastro </h2>
+    <form method="get" action="/cadastro-usuario.php">
+
+        <!--ÁreaDeTexto-->
+        <label for="nome">Nome:</label>       
+        <input type="text" id="nome" name="nome" required>  
+
+        <!--Telefone-->
+        <label for="phone">Telefone:</label> 
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"> 
+        <small>Format: 11-99999-9999</small><br><br> 
+
+        <!--Email--> 
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <!--Cpf-->
+        <label for="cpf">CPF</label>
+        <input type="number" id="cpf" name="cpf" required>
+
+        <!--senha-->
+        <label for="password">Senha:</label><br>
+        <input type="password" id="password" name="password" required>
+        
+        <label>Data de nascimento:</label>
+        <input type="date">
+
+        
+
+<!-- Button e checkbox-->
+            <label>Como você ficou sabendo do site?:</label>
+            <div class="options-container">
+            <div class="option-item">
+              <input type="checkbox" id="opção1" name="opção1">
+              <label for="opção1"> Instagram</label>
+              <input type="checkbox" id="opção2" name="opção2"> 
+              <label for="opção2">Google</label>
+              <input type="checkbox" id=" opção3" name="opção3"> 
+              <label for="fone3">Facebook</label>
+            </div>
+           
+            
+              <label>Sexo:</label>
+            <div class="options-container">
+              <div class="option-item">
+                <input type="radio" id="masculino" name="sexo" value="masculino">  
+                <label for="masculino">Masculino</label>
+              </div>
+               
+                <div class="option-item">
+                <input type="radio" id="feminino" name="sexo" value="feminino">
+                <label for="feminino">Feminino</label>
+            </div>
+            </div>
+
+            <form>
+          <label>Feedback:</label><br>
+          <textarea rows="4" cols="30"></textarea><br><br
+        </form>
+
+  
+     <button type="submit">Enviar</button>
+     </form>
+</div>
+</body>
+</html>
+
+
+
+
