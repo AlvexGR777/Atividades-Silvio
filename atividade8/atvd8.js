@@ -1,69 +1,51 @@
-const form = window.document.querySelector("form")
-form.addEventListener('submit', function(e),'aluno', 'notas','notas2','notas3',{
-    let aluno = window.document.querySelector('#aluno');
-    const aluno="";
+const form = window.document.querySelector("form");
 
-    let notas1 = window.document.querySelector('#notas1');
-    const notas1="";
-     
-
-    let notas2= window.document.querySelector('#notas2');
-    const nota2="";
+form.addEventListener('submit', function(e) {
    
-
-    let notas3 = window.document.querySelector('#notas3');
-    const notas3="";
-    
-
-    let media = window.document.querySelector('#media');
-    const media = (notas1 + notas2 + notas3)/3
-    
-    
-    const situacaofinal = window.document.querySelector('#situacaofinal');
-    let situacaofinal= media;
-
-
     e.preventDefault();
 
-    aluno = (aluno.text);
-    notas1 = parseInt(notas.value);
-     notas2 = parseInt(notas.value);
-      notas3 = parseInt(notas.value);
-    media= parseInt(media.value);
-     media = (notas1 + notas2 + notas3)/3
-
-if(isNaN(aluno)){
-            situacaofinal.textContent = "Por favor, digite somente letras em seu nome";}
-
-            
-if(isNaN(notas1) || isNaN(notas2) ||isNaN(notas3)){
-            situacaofinal.textContent = "Por favor, digite somente números maiores que 0";
     
-    }else{
-        situacaofinal= media
-        
+    const Aluno = window.document.querySelector('#aluno');
+    const Nota1 = window.document.querySelector('#nota1');
+    const Nota2 = window.document.querySelector('#nota2');
+    const Nota3 = window.document.querySelector('#nota3');
+    const situacaofinal = window.document.querySelector('#situacaofinal');
 
-        if(media < 2){
-             situacaofinal.textContent = ` Reprovado ${media} `;
+    
+    const nomeAluno = Aluno.value.trim();
+    const nota1 = parseInt(Nota1.value);
+    const nota2 = parseInt(Nota2.value);
+    const nota3 = parseInt(Nota3.value);
 
-        }else if(media < 4){
-            window.alert("Você está de Exame");
-        
-        }else if(media < 6){
-            window.alert("Óia, quase, Recuperação");
+    
+    if (/\d/.test(nomeAluno) || nomeAluno === "") {
+        situacaofinal.textContent = "Por favor, digite somente letras no nome do aluno.";
+        return; 
+    }
 
-        }else if(media< 8){
-            window.alert("Aprovado na média pae");  
-            
-        }else{
-            window.alert("Você é crãnio mano, fechou com chave de ouro");    
-        }
-    }       
-})                
-                
-        
+    
+    if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3) || nota1 < 0 || nota2 < 0 || nota3 < 0) {
+        situacaofinal.textContent = "Por favor, digite somente números maiores ou iguais a 0 nas notas.";
+        return; 
+    }
 
+    
+    const media = (nota1 + nota2 + nota3) / 3;
 
-     
-
-
+    
+    if (media < 2) {
+        situacaofinal.textContent = `${nomeAluno}, você foi Reprovado com média ${media.toFixed(1)}`;
+    } else if (media < 4) {
+        window.alert(`${nomeAluno}, você está de Exame (Média: ${media.toFixed(1)})`);
+        situacaofinal.textContent = `Situação: Exame (Média ${media.toFixed(1)})`;
+    } else if (media < 6) {
+        window.alert("Óia, quase, Recuperação");
+        situacaofinal.textContent = `Situação: Recuperação (Média ${media.toFixed(1)})`;
+    } else if (media < 8) {
+        window.alert("Aprovado na média pae");
+        situacaofinal.textContent = `Situação: Aprovado (Média ${media.toFixed(1)})`;
+    } else {
+        window.alert("Você é crânio mano, fechou com chave de ouro");
+        situacaofinal.textContent = `Situação: Aprovado com Excelência (Média ${media.toFixed(1)})`;
+    }
+});
