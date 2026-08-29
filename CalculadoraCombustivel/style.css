@@ -6,38 +6,38 @@ form{
 }
 
 label{
-width: 150px ;
-color: rgb(215, 229, 250);
-margin: 25px 50px 25px 0px;
-font-size: 29px;
+    width: 150px ;
+    color: rgb(215, 229, 250);
+    margin: 25px 50px 25px 0px;
+    font-size: 29px;
 }
 
 #button{
-background-color: rgb(132, 0, 255);
-border-radius: 1px;
-color: white;
-width: 170px;
-text-align: center;
-padding: 5px 15px;
-margin: 50px 120px;
-font-size: 19px;
+    background-color: rgb(132, 0, 255);
+    border-radius: 1px;
+    color: white;
+    width: 170px;
+    text-align: center;
+    padding: 5px 15px;
+    margin: 50px 120px;
+    font-size: 19px;
 }
 
 .row{
-width: 400px;
-margin: 20px auto;
-font-size: 25px;
+    width: 400px;
+    margin: 20px auto;
+    font-size: 25px;
 }
 
 input{
-height: 40px;
-width: 150px;
-padding-left: 20px;
-font-size: 20px;
+    height: 40px;
+    width: 150px;
+    padding-left: 20px;
+    font-size: 20px;
 }
 
 #consumo{
-color: white;
-font-size:  30px;
-text-align: center;
+    color: white;
+    font-size: 30px;
+    text-align: center;
 }
