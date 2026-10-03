@@ -21,6 +21,9 @@ async function carregarAlunos() {
         }
 
         alunos = await resposta.json();
+        status.textContent=`${alunos.length} alunos carregados.`;
+        mostrarAlunos(alunos);
+
 
     } catch (erro) {
 
