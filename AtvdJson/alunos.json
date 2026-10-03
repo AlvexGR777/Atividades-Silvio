@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "nome": "Gabriel Rivaldo",
+        "idade": 19,
+        "curso": "Desenvolvimento de Sistemas",
+        "nota": 5.5
+    },
+    {
+        "id": 2,
+        "nome": "Ana Alves",
+        "idade": 18,
+        "curso": "Artes Cênicas",
+        "nota": 8.9
+    },
+    {
+        "id": 3,
+        "nome": "Hector Renato",
+        "idade":22,
+        "curso": "Fotografia",
+        "nota": 10.0
+    },
+    {
+        "id": 4,
+        "nome": "Gustavo Aldalberto",
+        "idade": 20,
+        "curso": "Direito",
+        "nota": 7.0
+    },
+    {
+        "id": 5,
+        "nome": "Yasmin Silva",
+        "idade": 21,
+        "curso": "Arquitetura",
+        "nota": 5.0
+    }
+]
