@@ -37,7 +37,7 @@ function mostrarAlunos(lista) {
     listaAlunos.innerHTML = "";
 
   if (lista.lenght === 0) {
-        listaFilmes.innerHTML = "<p> Nenhum Filme foi encontrado.</p>";
+        listaAlunos.innerHTML = "<p> Nenhum Filme foi encontrado.</p>";
         return;
     }
     
