@@ -1,0 +1,68 @@
+{
+    "series": [
+        {
+            "id": 1,
+            "titulo": "Bojack Horseman",
+            "ano": 2014,
+            "genero": "Animação / Comédia dramática",
+            "temporadas": 6,
+            "imagem": "img/bojack.jpeg"
+        },
+        {
+            "id": 2,
+            "titulo": "Stranger Things",
+            "ano": 2016,
+            "genero": "Ficção / Drama",
+            "temporadas": 4,
+            "imagem": "img/stranger.jpeg"
+        },
+        {
+            "id": 3,
+            "titulo": "Dark",
+            "ano": 2017,
+            "genero": "Ficção / Suspense",
+            "temporadas": 3,
+            "imagem": "img/dark.jpeg"
+        },
+        {
+            "id": 4,
+            "titulo": "Entrelinhas Pontilhadas",
+            "ano": 2021,
+            "genero": "Animação / Comédia dramática",
+            "temporadas": 1,
+            "imagem": "img/entrelinhas.jpeg"
+        },
+        {
+            "id": 5,
+            "titulo": "Midnight Gospel",
+            "ano": 2020,
+            "genero": "Animação / Ficção",
+            "temporadas": 1,
+            "imagem": "img/midnight.jpeg"
+        },
+        {
+            "id": 6,
+            "titulo": "As 7 Vidas de Leia",
+            "ano": 2022,
+            "genero": "Drama / Mistério",
+            "temporadas": 1,
+            "imagem": "img/7vidas.jpeg"
+        },
+        {
+            "id": 7,
+            "titulo": "Merlí",
+            "ano": 2015,
+            "genero": "Drama / Comédia dramática",
+            "temporadas": 3,
+            "imagem": "img/merli.jpeg"
+        },
+        {
+            "id": 8,
+            "titulo": "Ginny & Georgia",
+            "ano": 2021,
+            "genero": "Comédia/ Mistério / Drama",
+            "temporadas": 2,
+            "imagem": "img/ginny.jpeg"
+        }
+    ]
+}

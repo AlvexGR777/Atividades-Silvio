@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de séries - JSON Externo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Séries</h1>
+        <p>Consulta de séries carregadas via JSON</p>
+    </header>
+
+    <main>
+
+        <section class="controles">
+            <input type="text" id="campoBusca" placeholder="Digite o título...">
+
+            <select id="filtroGenero">
+                <option value="">Todos os gêneros</option>
+                <option value="Animação">Animação</option>
+                <option value="Comédia dramática">Comédia dramática</option>
+                <option value="Drama">Drama</option>
+                <option value="Ficção">Ficção</option>
+                <option value="Suspense">Suspense</option>
+                <option value="Mistério">Mistério</option>
+            </select>
+
+            <select id="filtroAno">
+                <option value="">Todos os anos</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+            </select>
+
+            <button id="btnCarregar"> Carregar séries </button>
+            <button id="btnOrdenar"> Ordenar por Ano </button>
+        </section>
+
+        <section class="categoria-area">
+            <p id="categoria"></p>
+        </section>
+
+        <section
+            id="listaSeries"
+            class="lista-series">
+        </section>
+
+        <section class="estatisticas">
+            <p><strong>Total de séries:</strong> <span id="statTotal"></span></p>
+            <p><strong>Série mais antiga:</strong> <span id="statAntiga"></span></p>
+            <p><strong>Série mais recente:</strong> <span id="statRecente"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Interfaces Web II - The Show</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
