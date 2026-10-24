@@ -29,4 +29,9 @@ function funLinha(campoTitulo, campoObs){ // função com parametro
 
     return linha
 }
- 
+
+function deletaLinha(){
+    event.preventDefault();// tira o padrão
+    $(this).parent().parent().remove();
+}
+
