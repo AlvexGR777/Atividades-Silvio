@@ -1,0 +1,12 @@
+.tarefas{
+    margin-top : 50px;
+}
+
+.concluida td {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+body {
+    background-color: #9ebddd;
+}
